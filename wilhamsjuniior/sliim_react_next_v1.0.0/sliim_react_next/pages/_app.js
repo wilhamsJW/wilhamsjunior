@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(false);
-    }, 1000);
+    }, 500);
   }, []);
 
   return (

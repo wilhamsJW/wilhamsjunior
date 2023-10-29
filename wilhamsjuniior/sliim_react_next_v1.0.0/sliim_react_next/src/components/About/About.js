@@ -11,14 +11,14 @@ export default function About() {
     {
       desig: "Software Development ",
       duration: "2021- Até o momento",
-      company: "Twiter",
+      company: "Mundiale",
       detail:
         "Desenvolvi habilidades especializadas na implementação de soluções de Automação de Processos Robóticos (RPA) durante meu envolvimento em um projeto de grande escala, que permitiu que empresas efetuassem o cadastro de milhares de clientes com eficiência. Enfrentei e resolvi desafios complexos relacionados à automação de mapas, com sucesso na implementação de funcionalidades-chave em RPA para a execução dessas tarefas. Além disso, desempenhei um papel fundamental na criação e edição de mais de 90 landing pages utilizando técnicas avançadas de SEO (search enginner optimization) altamente eficazes, impulsionando as vendas diárias e ajudando os clientes a encontrar as melhores opções de internet em suas respectivas localidades. Gerenciei e otimizei dados cruciais dos clientes em dois projetos distintos, participando ativamente na revisão e na criação de novas regras de negócios diariamente.",
     },
     {
       desig: "Software Development ",
       duration: "2020-21",
-      company: "Twiter",
+      company: "ServiceNet",
       detail:
         "Como parte de um projeto inovador de pagamentos e jogos online, utilizei habilidades em diversas tecnologias-chave para otimizar a experiência de milhares de usuários. Resolvi com eficiência um desafio crítico relacionado a Progressive Web Applications (PWAs), evitando possíveis perdas financeiras. Identifiquei a causa raiz e implementei uma solução rápida e integrada à produção, garantindo operações contínuas e aprimorando a experiência do usuário e a eficiência operacional da empresa.",
     },
@@ -51,7 +51,7 @@ export default function About() {
       {/* Heading Starts */}
       <div className="heading text-left text-md-center">
         <h2>
-          about <span>me</span>
+          sobre <span>mim</span>
         </h2>
       </div>
       {/* Heading Ends */}
@@ -122,6 +122,17 @@ export default function About() {
                       </Link>
                     </p>
                   </li>
+                  <li>
+                    <p>
+                      <span className="material-icons">settings</span>
+                      <span></span>
+                      <Link legacyBehavior href="https://playcode.io/react_usereducer">
+                        <a target="_blank" rel="noreferrer" className="linkStyle">
+                          palycode.io
+                        </a>
+                      </Link>
+                    </p>
+                  </li>
                   {/* <li>
                     <p>
                       <span className="material-icons">settings</span>
@@ -154,9 +165,9 @@ export default function About() {
               </div>
             </div>
             {/* Download CV Starts */}
-            <a href="#" className="btn main-btn">
+            {/* <a href="#" className="btn main-btn">
               <span>download my cv</span>
-            </a>
+            </a> */}
             {/* Download CV Ends */}
           </div>
         </div>
@@ -174,13 +185,13 @@ export default function About() {
                 className={`${Active == 1 ? "active" : ""}`}
                 onClick={() => setActive(1)}
               >
-                experience
+                experiência
               </p>
               <p
                 className={`${Active == 2 ? "active" : ""}`}
                 onClick={() => setActive(2)}
               >
-                education
+                educação
               </p>
             </div>
             <div className="col-12 resume-holder">
@@ -247,13 +258,14 @@ export default function About() {
                 }`}
                 onClick={() => setActive(1)}
               >
+                {/* Education Item Starts */}
                 <Swiper
-                  slidesPerView={3}
+                  slidesPerView={2}
                   spaceBetween={30}
                   loop={true}
                   autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
+                    delay: 3000,
+                    disableOnInteraction: true,
                   }}
                   navigation={{
                     prevEl: ".swiper-button-prev-style-3",
@@ -281,7 +293,6 @@ export default function About() {
                   }}
                   className=""
                 >
-                  {/* Education Item Starts */}
                   {education.map((item, i) => (
                     <SwiperSlide key={i}>
                       <div className="resume-item item">
@@ -296,8 +307,8 @@ export default function About() {
                       </div>
                     </SwiperSlide>
                   ))}
-                  {/* Education Item Ends */}
                 </Swiper>
+                {/* Education Item Ends */}
               </div>
               {/* Education Ends */}
             </div>

@@ -4,6 +4,9 @@ import SectionContainer from "../../layouts/SectionContainer";
 
 const BlogDetails = ({ blog }) => {
   const { sectionToggle } = useContext(Context);
+  const descriptionMarkup = () => {
+    return {__html: blog?.description} 
+  }
   return (
     <SectionContainer sectionName={"blog-content"}>
       {blog && (
@@ -15,9 +18,19 @@ const BlogDetails = ({ blog }) => {
                   href="#"
                   onClick={() => sectionToggle("blog")}
                   className="link-blog"
+                  style={{
+                    position: 'fixed',
+                    right: '10px',
+                    bottom: '10px',
+                    backgroundColor: '#1f1515',
+                    color: '#ffffff',
+                    padding: '10px',
+                    borderRadius: '5px'
+                  }}
+
                 >
                   <span className="material-icons">keyboard_arrow_left</span>{" "}
-                  Back to Blog
+                  Back
                 </a>
 
                 <div className="meta d-inline-block">
@@ -29,39 +42,14 @@ const BlogDetails = ({ blog }) => {
                     {blog.date}
                   </span>
                   <span>
-                    <span className="material-icons">tag</span> html, css,
-                    javascript
+                    <span className="material-icons">tag</span> {blog.tag}
                   </span>
                 </div>
                 <img src={blog.image} className="img-fluid" alt="Blog Post" />
                 <h2 href="blog-post.html">{blog.title}</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum...
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <span dangerouslySetInnerHTML={descriptionMarkup()} /> 
+                {/* Sobre dangerouslySetInnerHTML={descriptionMarkup()
+                FAz com que o a string que vem formatada pelo JSON não se perca sua formatação, dessa forma o front não precisa formata-la */}
               </div>
             </div>
           </div>

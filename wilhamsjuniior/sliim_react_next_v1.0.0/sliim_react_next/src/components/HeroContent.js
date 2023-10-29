@@ -13,9 +13,7 @@ const HeroContent = () => {
                 <h2>
                   Olá ! Eu me chamo<span> Wilhams.</span>
                 </h2>
-                <p>
-                  Desenvolvedor Fullstack
-                </p>
+                <p>Desenvolvedor Fullstack</p>
                 <div className="buttons">
                   <a
                     id="link-about"
@@ -35,29 +33,37 @@ const HeroContent = () => {
       {/* Social Media Starts */}
       <div className="home-social d-none d-sm-block">
         <ul className="social list-unstyled d-flex m-0">
-          <li className="facebook">
+          {/* <li className="facebook">
             <a title="Facebook" href="#">
               <i className="fa fa-facebook" />
             </a>
-          </li>
-          <li className="twitter">
-            <a title="Twitter" href="#">
-              <i className="fa fa-twitter" />
-            </a>
-          </li>
+          </li> */}
           <li className="linkedin">
-            <a title="Linkedin" href="#">
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/in/developer-front-back-wilhams/"
+            >
               <i className="fa fa-linkedin" />
             </a>
           </li>
-          <li className="dribbble">
-            <a title="Dribbble" href="#">
-              <i className="fa fa-dribbble" />
+          <li className="github">
+            <a title="github" href="https://github.com/wilhamsJW">
+              <i className="fa fa-github" />
             </a>
           </li>
-          <li className="instagram">
+          <li className="codepen">
+            <a title="Codpen" href="https://codepen.io/wilhamsjw">
+              <i className="fa fa-codepen" />
+            </a>
+          </li>
+          {/* <li className="instagram">
             <a title="Instagram" href="#">
               <i className="fa fa-instagram" />
+            </a>
+          </li> */}
+          <li className="code">
+            <a title="playcode" href="https://playcode.io/react_usereducer">
+              <i className="fa fa-code" />
             </a>
           </li>
         </ul>

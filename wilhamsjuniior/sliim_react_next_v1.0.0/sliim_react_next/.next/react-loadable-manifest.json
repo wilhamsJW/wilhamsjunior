@@ -1,8 +1,37 @@
 {
-  "index.js -> ../src/components/Portfolio/PortfolioIsotope": {
-    "id": "index.js -> ../src/components/Portfolio/PortfolioIsotope",
+  "index-animated-dark.js -> ../src/components/Portfolio/PortfolioIsotope": {
+    "id": 770,
     "files": [
-      "static/chunks/src_components_Portfolio_PortfolioIsotope_js.js"
+      "static/chunks/391.5c97c14ad247c6c7.js",
+      "static/chunks/770.92b9062186aeef22.js"
+    ]
+  },
+  "index-animated-light.js -> ../src/components/Portfolio/PortfolioIsotope": {
+    "id": 770,
+    "files": [
+      "static/chunks/391.5c97c14ad247c6c7.js",
+      "static/chunks/770.92b9062186aeef22.js"
+    ]
+  },
+  "index-image.js -> ../src/components/Portfolio/PortfolioIsotope": {
+    "id": 770,
+    "files": [
+      "static/chunks/391.5c97c14ad247c6c7.js",
+      "static/chunks/770.92b9062186aeef22.js"
+    ]
+  },
+  "index-video.js -> ../src/components/Portfolio/PortfolioIsotope": {
+    "id": 770,
+    "files": [
+      "static/chunks/391.5c97c14ad247c6c7.js",
+      "static/chunks/770.92b9062186aeef22.js"
+    ]
+  },
+  "index.js -> ../src/components/Portfolio/PortfolioIsotope": {
+    "id": 770,
+    "files": [
+      "static/chunks/391.5c97c14ad247c6c7.js",
+      "static/chunks/770.92b9062186aeef22.js"
     ]
   }
 }

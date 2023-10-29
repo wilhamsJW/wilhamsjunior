@@ -25,16 +25,16 @@ const Index = () => {
   return (
     <Fragment>
       <Head>
-        <link
+        {/* <link
           legacyBehavior
           href="/demo/assets/css/materialdesignicons.min.css"
           rel="stylesheet"
-        />
-        <link
+        /> */}
+        {/* <link
           legacyBehavior
           href="/demo/assets/css/demo.css"
           rel="stylesheet"
-        />
+        /> */}
       </Head>
 
       <Layout>

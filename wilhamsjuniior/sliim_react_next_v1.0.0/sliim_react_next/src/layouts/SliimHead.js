@@ -26,7 +26,7 @@ const SliimHead = () => {
       <div>
         <title>Sliim - React NextJS Personal Portfolio </title>
         <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons" 
           rel="stylesheet"
         />
         {/* Template Google Font */}

@@ -23,7 +23,7 @@ const SliimHead = () => {
   const { color } = useContext(Context);
   return (
     <Fragment>
-      <Head>
+      <div>
         <title>Sliim - React NextJS Personal Portfolio </title>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -57,7 +57,7 @@ const SliimHead = () => {
           rel="stylesheet"
         />
         <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
-      </Head>
+      </div>
     </Fragment>
   );
 };

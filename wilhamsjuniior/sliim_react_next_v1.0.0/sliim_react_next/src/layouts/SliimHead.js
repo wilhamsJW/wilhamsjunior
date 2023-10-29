@@ -38,7 +38,7 @@ const SliimHead = () => {
         {/* Template CSS Files */}
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/simplebar.min.css" />
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" /> 
         <link
           rel="stylesheet"
           type="text/css"

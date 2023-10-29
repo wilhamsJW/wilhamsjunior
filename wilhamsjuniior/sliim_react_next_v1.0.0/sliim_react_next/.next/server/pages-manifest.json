@@ -1,14 +1,14 @@
 {
   "/_app": "pages/_app.js",
-  "/api/hello": "pages/api/hello.js",
   "/_error": "pages/_error.js",
-  "/index copy": "pages/index copy.html",
+  "/_document": "pages/_document.js",
+  "/api/hello": "pages/api/hello.js",
   "/components/layouts/sliim_head": "pages/components/layouts/sliim_head.html",
+  "/index copy": "pages/index copy.html",
   "/index-animated-dark": "pages/index-animated-dark.html",
   "/index-animated-light": "pages/index-animated-light.html",
+  "/": "pages/index.html",
   "/index-image": "pages/index-image.html",
   "/index-video": "pages/index-video.html",
-  "/": "pages/index.html",
-  "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

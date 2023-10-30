@@ -494,7 +494,7 @@ body.dark .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   z-index: 3;
   border-radius: 0;
   height: 52px;
-  background-color: #383838;
+  background-color: rgba(56, 56, 56, 0.3);
 }
 
 .navigation-trigger span {
@@ -502,7 +502,7 @@ body.dark .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   display: block;
   width: 24px;
   height: 2px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
   top: 50%;
   margin-top: -1px;
   left: 50%;

@@ -70,7 +70,6 @@ const HeroContent = () => {
         </ul>
       </div> */}
       {/* Social Media Ends */}
-
       {/* Home Contact Starts */}
       <div className="home-social">
       </div>

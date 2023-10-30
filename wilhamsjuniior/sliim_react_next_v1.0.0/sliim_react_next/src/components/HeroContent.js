@@ -11,7 +11,7 @@ const HeroContent = () => {
             <div className="hero-section d-flex align-items-center justify-content-center">
               <div className="text-center">
                 <h2>
-                  Olá ! Eu me chamo<span> Wilhams.</span>
+                  Olá ! Eu me chamo<span> Wilhams Júnior.</span>
                 </h2>
                 <p>Desenvolvedor Fullstack</p>
                 <div className="buttons">
@@ -30,8 +30,9 @@ const HeroContent = () => {
         </div>
       </div>
       {/* Home Main Content Ends */}
+      
       {/* Social Media Starts */}
-      <div className="home-social d-none d-sm-block">
+      <div className="home-contact d-sm-block">
         <ul className="social list-unstyled d-flex m-0">
           {/* <li className="facebook">
             <a title="Facebook" href="#">
@@ -69,15 +70,29 @@ const HeroContent = () => {
         </ul>
       </div>
       {/* Social Media Ends */}
+
       {/* Home Contact Starts */}
-      <div className="home-contact d-none d-sm-block">
-        <p>
-          Vamos trabalhar juntos
-          <a className="d-block" href="#">
-            wilhams.code@gmail.com
-          </a>
-          <span>+55 83 9 9106 7262</span>
-        </p>
+      <div className="home-social">
+      {/* Botão do WhatsApp */}
+      <div
+        style={{
+          position: "fixed",
+          right: "20px",
+          bottom: "20px",
+        }}
+      >
+        <a
+          href="https://api.whatsapp.com/send?phone=5583991067262&text=Olá Wilhams Júnior! Eu vim através do seu site e gostaria de falar com você"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png"
+            alt="WhatsApp"
+            style={{ width: "41px", height: "41px" }}
+          />
+        </a>
+      </div>
       </div>
     </Fragment>
   );

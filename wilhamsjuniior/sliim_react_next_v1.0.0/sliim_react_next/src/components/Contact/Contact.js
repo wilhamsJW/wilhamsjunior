@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Contact() {
@@ -9,29 +10,27 @@ export default function Contact() {
         </h2>
       </div>
       <div className="row">
-        <div className="col-12 col-lg-4">
-          <div className="box">
-            <span className="material-icons">call</span>
-            <p>+5583 9 9106 7262</p>
-          </div>
+        <div className="col-12 col-lg-12">
+          <Link legacyBehavior href="mailto:mjunior.wj@gmail.com">
+            <a>
+              <div className="box">
+                <span className="material-icons">email</span>
+
+                <p>wilhams.code@gmail.com</p>
+              </div>
+            </a>
+          </Link>
         </div>
-        <div className="col-12 col-lg-4">
-          <div className="box">
-            <span className="material-icons">email</span>
-            <p>wilhams.code@gmail.com</p>
-          </div>
-        </div>
-        <div className="col-12 col-lg-4">
+        {/* <div className="col-12 col-lg-6">
           <div className="box last-box">
             <span className="material-icons">location_on</span>
             <p>Recife, PE</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="separator" />
       <div className="row">
         <div className="col-12">
-          <h4 className="mb-3">Sobre</h4>
           <p>
             Sinta-se à vontade para entrar em contato comigo. Estou sempre
             aberto a discutir novos projetos ou ideias criativas. Me interesso

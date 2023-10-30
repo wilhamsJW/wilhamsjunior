@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import Link from "next/link";
 
 import dynamic from "next/dynamic";
 import React, { useEffect } from "react";
@@ -57,10 +58,80 @@ const Index = () => {
             {/* Heading Starts */}
             <div className="heading text-left text-md-center">
               <h2>
-                meu <span>portfólio</span>
+                Meu <span>Portfólio</span>
               </h2>
             </div>
-            <h2 className="heading text-left text-md-center"><a href="https://github.com/wilhamsJW" target="_blank" rel="noopener noreferrer">Github</a></h2>
+            <div className="container">
+              <h2 className="heading text-left ">
+                <a target="_blank" rel="noopener noreferrer">
+                  <p>
+                    Com mais de 50 projetos de sucesso e o suporte a mais de 104
+                    mil usuários, estou empenhado em fornecer soluções
+                    tecnológicas de ponta para impulsionar o crescimento e a
+                    eficiência de sua empresa. Meu portfólio, disponível na
+                    plataforma de hospedagem de códigos para desenvolvedores,
+                    demonstra meu compromisso com as tecnologias mais recentes e
+                    inovadoras do mercado.
+                  </p>
+
+                  <h3>Habilidades-chave:</h3>
+                  <ul>
+                    <li>
+                      <strong>Linguagens:</strong> JavaScript, PHP
+                    </li>
+                    <li>
+                      <strong>Frameworks:</strong> React, Next.js, Express
+                    </li>
+                    <li>
+                      <strong>UI Frameworks:</strong> Theme UI, Material UI,
+                      Bootstrap
+                    </li>
+                    <li>
+                      <strong>Backend:</strong> Node.js, NestJS (Framework)
+                    </li>
+                    <li>
+                      <strong>Bancos de Dados:</strong> MongoDB, PostgreSQL,
+                      TypeORM (ORM)
+                    </li>
+                    <li>
+                      <strong>Bibliotecas de Estado e Cache:</strong> Redux,
+                      React Query
+                    </li>
+                    <li>
+                      <strong>Biblioteca CSS:</strong> Styled Components
+                    </li>
+                    <li>
+                      <strong>Testes:</strong> Jest
+                    </li>
+                    <li>
+                      <strong>Estilos:</strong> CSS, CSS Grid
+                    </li>
+                  </ul>
+
+                  <p>
+                    Destaco minha especialização em estratégias avançadas de
+                    SEO, garantindo que os produtos e serviços de sua empresa
+                    alcancem a visibilidade e o reconhecimento merecidos no
+                    cenário digital.
+                  </p>
+
+                  <p>
+                    Meu objetivo é oferecer soluções personalizadas e escaláveis
+                    que impulsionem sua presença online e impulsionem o sucesso
+                    de seu negócio. Estou ansioso para contribuir para o
+                    crescimento contínuo de sua empresa.
+                  </p>
+                </a>
+                <Link legacyBehavior href="https://github.com/wilhamsJW">
+                  <a className="linkStyle">
+                    <p className="linkStyle"> 
+                      Acesse meu GitHub
+                    </p>
+                  </a>
+                </Link>
+              </h2>
+            </div>
+
             {/* <PortfolioIsotope />
             Aqui que aparece os itens do porfolio que precisa corrigir */}
           </div>

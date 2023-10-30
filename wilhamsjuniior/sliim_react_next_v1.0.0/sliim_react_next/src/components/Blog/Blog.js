@@ -113,7 +113,7 @@ export default function Blog() {
           {/* Heading Starts */}
           <div className="heading text-left text-md-center">
             <h2>
-              Blog do <span>Wilhams</span>
+              Blog do <span>Wilhams Júnior</span>
             </h2>
           </div>
           {/* Heading Ends */}

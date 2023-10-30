@@ -6,7 +6,7 @@ import Link from "next/link";
 SwiperCore.use([Autoplay, Navigation]);
 
 export default function About() {
-  const [Active, setActive] = useState(2);
+  const [Active, setActive] = useState(1);
   const experience = [
     {
       desig: "Software Development ",
@@ -28,7 +28,7 @@ export default function About() {
       company: "Freelancer",
       detail:
         "Atuei como freelancer, focando em desenvolvimento de sites e solução de problemas para uma variedade de clientes, incluindo empresas físicas e jurídicas. Minha pilha de tecnologia principal envolvia JavaScript (JS) e React, onde pude criar e aprimorar sites, além de resolver desafios complexos com eficiência e precisão. Durante esse período, adquiri habilidades sólidas em criação de soluções web personalizadas, garantindo experiências fluidas e amigáveis para os usuários finais.",
-    }
+    },
   ];
   const education = [
     {
@@ -44,14 +44,14 @@ export default function About() {
       institution: "JW",
       detail:
         "Com mais de uma década de experiência em oratória, aprimorei habilidades sólidas de falar em público e transmitir mensagens de forma envolvente e eficaz. Conduzi palestras bem-sucedidas sobre tecnologia com foco em SEO, alcançando mais de 500 participantes. Além disso, apresentei palestras abrangendo uma variedade de tópicos, demonstrando capacidade comprovada de comunicação com públicos diversos e de diferentes tamanhos.",
-    }
+    },
   ];
   return (
     <div id="about-content">
       {/* Heading Starts */}
       <div className="heading text-left text-md-center">
         <h2>
-          sobre <span>mim</span>
+          Quem <span>Sou eu</span>
         </h2>
       </div>
       {/* Heading Ends */}
@@ -67,7 +67,7 @@ export default function About() {
           </div>
           <div className="col-12 col-lg-7">
             <p className="m-0">
-              Sou Wilhams Júnior, um desenvolvedor Fullstack com mais de 4 anos
+              Sou Wilhams Júnior, um Desenvolvedor Fullstack com mais de 4 anos
               de experiência, especializado em otimização de desempenho e SEO.
               <br />
               <br />
@@ -91,44 +91,66 @@ export default function About() {
                   </li> */}
                   <li>
                     <p>
-                      <span className="material-icons">settings</span>
+                      <span className="material-icons">link</span>
                       <span></span>
                       <Link legacyBehavior href="https://github.com/wilhamsJW">
-                        <a target="_blank" rel="noreferrer" className="linkStyle">
-                          github.com
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          className="linkStyle"
+                        >
+                          GitHub
                         </a>
                       </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <span className="material-icons">settings</span>
+                      <span className="material-icons">link</span>
                       <span></span>
-                      <Link legacyBehavior href="https://www.linkedin.com/in/developer-front-back-wilhams/">
-                        <a target="_blank" rel="noreferrer" className="linkStyle">
-                          linkedin.com
+                      <Link
+                        legacyBehavior
+                        href="https://www.linkedin.com/in/developer-front-back-wilhams/"
+                      >
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          className="linkStyle"
+                        >
+                          Linkedin
                         </a>
                       </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <span className="material-icons">settings</span>
+                      <span className="material-icons">code</span>
                       <span></span>
                       <Link legacyBehavior href="https://codepen.io/wilhamsjw">
-                        <a target="_blank" rel="noreferrer" className="linkStyle">
-                          codepen.io
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          className="linkStyle"
+                        >
+                          CodePen
                         </a>
                       </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <span className="material-icons">settings</span>
+                      <span className="material-icons">code</span>
                       <span></span>
-                      <Link legacyBehavior href="https://playcode.io/react_usereducer">
-                        <a target="_blank" rel="noreferrer" className="linkStyle">
-                          palycode.io
+                      <Link
+                        legacyBehavior
+                        href="https://playcode.io/react_usereducer"
+                      >
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          className="linkStyle"
+                        >
+                          PlayCode
                         </a>
                       </Link>
                     </p>
@@ -145,20 +167,16 @@ export default function About() {
                 <ul className="list-unstyled personal-info w-100">
                   <li>
                     <p>
-                      <span className="material-icons">call</span>
-                      <span>Phone : </span>+55 83 99106 - 7262
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <span className="material-icons">location_on</span>
-                      <span>Address : </span> Recife, PE
+                      <span className="material-icons">location_on</span>Recife,
+                      PE
                     </p>
                   </li>
                   <li>
                     <p>
                       <span className="material-icons">email</span>
-                      <span>Email : </span>mjunior.wj@mail.com
+                      <Link legacyBehavior href="mailto:mjunior.wj@gmail.com">
+                        <a className="linkStyle">mjunior.wj@gmail.com</a>
+                      </Link>
                     </p>
                   </li>
                 </ul>
@@ -177,9 +195,7 @@ export default function About() {
       <div className="w-100 resume">
         <div className="container">
           <div className="row">
-            <div className="col-12 pl-0">
-              <h4 className="subtitle text-center">Experiência e Educação</h4>
-            </div>
+            <div className="col-12 pl-0"></div>
             <div className="resume-header">
               <p
                 className={`${Active == 1 ? "active" : ""}`}
@@ -256,7 +272,7 @@ export default function About() {
                 className={`owl-carousel ${
                   Active == 2 ? "visiblecarousel owl-loaded" : "hiddencarousel"
                 }`}
-                onClick={() => setActive(1)}
+                // onClick={() => setActive(1)} // Clik que fazia o card de eduação mudar para experiencia
               >
                 {/* Education Item Starts */}
                 <Swiper
@@ -288,7 +304,7 @@ export default function About() {
                       slidesPerView: 2,
                     },
                     1350: {
-                      slidesPerView: 3,
+                      slidesPerView: 2,
                     },
                   }}
                   className=""
@@ -330,14 +346,17 @@ export default function About() {
             <div className="col-12 col-md-4">
               <span className="material-icons">thumb_up</span>
               <h3>53</h3>
-              <p>Projetos feito</p>
+              <p>Projetos feitos</p>
             </div>
             {/* Fact Badge Item Ends */}
             {/* Fact Badge Item Starts */}
             <div className="col-12 col-md-4">
               <span className="material-icons">favorite</span>
               <h3>Mais de 104 mil</h3>
-              <p>Pessoas satifeitas</p>
+              <p>Pessoas satisfeitas</p>
+              <p style={{ fontSize: "12px" }}>
+                (Inclui alcance total de usuários)
+              </p>
             </div>
             {/* Fact Badge Item Ends */}
           </div>
@@ -350,7 +369,7 @@ export default function About() {
           <div className="col-12">
             <h4 className="subtitle">
               {/*<span class="material-icons">download_done</span>*/}
-              Hards skills
+              Hard Skills
             </h4>
           </div>
           {/* Skill Bar Starts */}
@@ -568,6 +587,175 @@ export default function About() {
         </div>
       </div>
       {/* Skills Ends */}
+
+      {/* Soft Skills Starts */}
+      <div className="container skills">
+        <div className="row">
+          <div className="col-12">
+            <h4 className="subtitle">
+              {/*<span class="material-icons">download_done</span>*/}
+              Soft Skills
+            </h4>
+          </div>
+          {/* Skill Bar Starts */}
+          <div className="col-12 col-md-6">
+            <span className="skill-text">Resolução de Problemas</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={93}
+                style={{ width: "93%" }}
+              />
+              <span className="percent" style={{ right: "7%" }}>
+                93%
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          {/* Skill Bar Ends */}
+          {/* Skill Bar Starts */}
+          <div className="col-12 col-md-6">
+            <span className="skill-text">Persistência</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={97}
+                style={{ width: "97%" }}
+              />
+              <span className="percent" style={{ right: "3%" }}>
+                97%
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          {/* Skill Bar Ends */}
+          {/* Skill Bar Starts */}
+          <div className="col-12 col-md-6">
+            <span className="skill-text">Aprendizado Contínuo</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={91}
+                style={{ width: "91%" }}
+              />
+              <span className="percent" style={{ right: "9%" }}>
+                91%
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          {/* Skill Bar Ends */}
+          {/* Skill Bar Starts */}
+          <div className="col-12 col-md-6">
+            <span className="skill-text">Comunicação assertiva</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={98}
+                style={{ width: "98%" }}
+              />
+              <span className="percent" style={{ right: "2%" }}>
+                98%
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          {/* Skill Bar Ends */}
+          {/* Skill Bar Starts */}
+          <div className="col-12 col-md-6">
+            <span className="skill-text">Gestão do Tempo</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={87}
+                style={{ width: "87%" }}
+              />
+              <span className="percent" style={{ right: "13%" }}>
+                87%
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          {/* Skill Bar Ends */}
+          {/* Skill Bar Starts */}
+          <div className="col-12 col-md-6">
+            <span className="skill-text ">Empatia</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={799}
+                style={{ width: "99%" }}
+              />
+              <span className="percent" style={{ right: "1%" }}>
+                99%
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          {/* Skill Bar Ends */}
+          {/* Skill Bar Starts */}
+          <div className="col-12 col-md-6">
+            <span className="skill-text ">Inteligência Emocional</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={94}
+                style={{ width: "94%" }}
+              />
+              <span className="percent" style={{ right: "6%" }}>
+                94%
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          {/* Skill Bar Ends */}
+          {/* Skill Bar Starts */}
+          <div className="col-12 col-md-6">
+            <span className="skill-text">Trabalho em Equipe</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={88}
+                style={{ width: "88%" }}
+              />
+              <span className="percent" style={{ right: "12%" }}>
+                88
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          <div className="col-12 col-md-6">
+            <span className="skill-text">Capacidade de trabalhar sob pressão</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={92}
+                style={{ width: "92%" }}
+              />
+              <span className="percent" style={{ right: "8%" }}>
+                92
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          <div className="col-12 col-md-6">
+            <span className="skill-text">Flexibilidade</span>
+            <div className="chart-bar">
+              <span
+                className="item-progress"
+                data-percent={84}
+                style={{ width: "84%" }}
+              />
+              <span className="percent" style={{ right: "16%" }}>
+                84
+                <span className="arrow" />
+              </span>
+            </div>
+          </div>
+          {/* Skill Bar Ends */}
+        </div>
+      </div>
+      {/* Soft Skills Ends */}
       {/* Fun Facts Starts */}
     </div>
   );

@@ -32,13 +32,13 @@ const HeroContent = () => {
       {/* Home Main Content Ends */}
       
       {/* Social Media Starts */}
-      <div className="home-contact d-sm-block">
+      {/* <div className="home-contact d-sm-block">
         <ul className="social list-unstyled d-flex m-0">
-          {/* <li className="facebook">
+          <li className="facebook">
             <a title="Facebook" href="#">
               <i className="fa fa-facebook" />
             </a>
-          </li> */}
+          </li>
           <li className="linkedin">
             <a
               title="Linkedin"
@@ -57,42 +57,22 @@ const HeroContent = () => {
               <i className="fa fa-codepen" />
             </a>
           </li>
-          {/* <li className="instagram">
+          <li className="instagram">
             <a title="Instagram" href="#">
               <i className="fa fa-instagram" />
             </a>
-          </li> */}
+          </li>
           <li className="code">
             <a title="playcode" href="https://playcode.io/react_usereducer">
               <i className="fa fa-code" />
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
       {/* Social Media Ends */}
 
       {/* Home Contact Starts */}
       <div className="home-social">
-      {/* Botão do WhatsApp */}
-      <div
-        style={{
-          position: "fixed",
-          right: "20px",
-          bottom: "20px",
-        }}
-      >
-        <a
-          href="https://api.whatsapp.com/send?phone=5583991067262&text=Olá Wilhams Júnior! Eu vim através do seu site e gostaria de falar com você"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png"
-            alt="WhatsApp"
-            style={{ width: "41px", height: "41px" }}
-          />
-        </a>
-      </div>
       </div>
     </Fragment>
   );

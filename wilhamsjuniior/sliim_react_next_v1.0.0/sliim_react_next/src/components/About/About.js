@@ -224,7 +224,7 @@ export default function About() {
                   loop={true}
                   autoplay={{
                     delay: 2500,
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
                   }}
                   breakpoints={{
                     320: {

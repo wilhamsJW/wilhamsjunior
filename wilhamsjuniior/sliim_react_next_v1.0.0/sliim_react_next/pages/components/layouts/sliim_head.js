@@ -7,7 +7,7 @@ export default function SliiimHead() {
       <Head>
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Sliim - React NextJS Personal Portfolio </title>
+          <title>Wilhams Júnior</title>
           {/* Material Icons Font */}
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
           {/* Template Google Font */}

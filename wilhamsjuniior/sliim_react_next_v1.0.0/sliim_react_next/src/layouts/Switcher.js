@@ -48,7 +48,8 @@ const Switcher = () => {
         }}
       >
         <div className="content-switcher">
-          <h4>COLOR SWITCHER</h4>
+          
+          {/* <h4>COLOR SWITCHER</h4> Aqui ficava as opções do cliente escolher a cor das fontes q ele queria, achei mehor tirar
           <ul>
             {colors.map((color) => (
               <li key={color.id}>
@@ -65,7 +66,7 @@ const Switcher = () => {
                 </a>
               </li>
             ))}
-          </ul>
+          </ul> */}
           <hr />
           <h4>BODY SKIN</h4>
           <label onClick={() => setTheme("dark")}>
@@ -100,7 +101,7 @@ const Switcher = () => {
         style={{ display: settingToggle ? "none" : "block" }}
         onClick={() => setSettingToggle(true)}
       >
-        <i className="fa fa-cog fa-spin" />
+        <i className="fa fa-cog" />
       </div>
     </Fragment>
   );

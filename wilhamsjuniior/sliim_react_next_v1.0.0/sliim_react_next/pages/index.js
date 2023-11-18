@@ -11,12 +11,12 @@ import HeroContent from "../src/components/HeroContent";
 import Layout from "../src/layouts/Layout";
 import SectionContainer from "../src/layouts/SectionContainer";
 
-const PortfolioIsotope = dynamic(
-  () => import("../src/components/Portfolio/PortfolioIsotope"),
-  {
-    ssr: false,
-  }
-);
+// const PortfolioIsotope = dynamic(
+//   () => import("../src/components/Portfolio/PortfolioIsotope"),
+//   {
+//     ssr: false,
+//   }
+// );
 
 const Index = () => {
   useEffect(() => {
@@ -39,6 +39,7 @@ const Index = () => {
       </Head>
 
       <Layout>
+        
         <SectionContainer sectionName={"home"}>
           <div className="home-content">
             {/* Background Dotted Pattern Starts */}
@@ -47,11 +48,13 @@ const Index = () => {
           </div>
         </SectionContainer>
         {/* Home Section Ends */}
+
         {/* About Section Starts */}
         <SectionContainer sectionName={"about"}>
           <About />
         </SectionContainer>
         {/* About Section Ends */}
+
         {/* Portfolio Section Starts */}
         <SectionContainer sectionName="work">
           <div id="work-content">
@@ -137,11 +140,13 @@ const Index = () => {
           </div>
         </SectionContainer>
         {/* Portfolio Section Ends */}
+
         {/* Contact Section Starts */}
         <SectionContainer sectionName="contact">
           <Contact />
         </SectionContainer>
         {/* Contact Section Ends */}
+
         {/* Blog Section Starts */}
         <Blog />
       </Layout>
@@ -154,7 +159,6 @@ export default Index;
  * para criar uma postagerm
  * 
  * o q é isso? rel="noopener noreferrer" q fica dentro de uma tag a?
-ChatGPT
 A adição de rel="noopener noreferrer" em um link <a> é uma prática recomendada em termos de segurança e privacidade ao abrir links em uma nova janela. Vamos entender o significado de cada parte:
 
 noopener: Isso impede que a nova página acesse o objeto window.opener e, assim, impeça possíveis ataques de phishing que poderiam ter acesso a janelas abertas anteriormente.

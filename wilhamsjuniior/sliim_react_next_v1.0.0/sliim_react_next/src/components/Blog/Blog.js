@@ -99,6 +99,43 @@ export default function Blog() {
   <p>#typeorm #backend #backenddeveloper #otimização #node #sqlserver</p>
   `
     },
+    {
+      id: 4,
+      image: "images/blog/blog-post-3.jpg",
+      date: "01 Nov 2023",
+      tag: "seo, otimização",
+      title: "Você conhece o uso da tag meta e a importãncia dela para o rankeamento do seu site?",
+      description: `<div>
+      <p><strong>As tags do cabeçalho <strong>&lt;meta name="description" content="..."&gt;</strong> são usadas para fornecer uma descrição concisa do conteúdo de uma página da web.</strong></p>
+      <p><strong>Essas descrições podem influenciar como os mecanismos de busca, como o Google, exibem e classificam o seu site nos resultados de pesquisa.</strong></p>
+      <p><em>Embora essas tags não afetem diretamente o ranking nos mecanismos de busca, elas podem influenciar a taxa de cliques (CTR) e a experiência do usuário quando o seu site aparece nos resultados de pesquisa.</em></p>
+      <p>A <strong>meta tag de descrição</strong> é uma das maneiras pelas quais você pode <em>otimizar seu site para mecanismos de busca</em>.</p>
+      <p>Ao criar uma <strong>meta descrição</strong>, é importante incluir palavras-chave relevantes que os usuários do Google possam pesquisar para encontrar o seu site.</p>
+      <p>No entanto, é essencial que a descrição seja <em>informativa, relevante e atraente para os usuários</em>, para que eles se sintam incentivados a clicar no seu link nos resultados de pesquisa.</p>
+      <p>Certifique-se de que a descrição seja <strong>clara, concisa e reflita com precisão o conteúdo da página correspondente</strong>.</p>
+      <p>Além disso, <em>evite o preenchimento de palavras-chave</em> e certifique-se de que a descrição seja escrita de forma <strong>natural e envolvente para os usuários</strong>.</p>
+      <p>Isso pode ajudar a aumentar a <span style='color: blue;'>visibilidade e a relevância</span> do seu site nos resultados de pesquisa do Google.</p>
+  </div>
+  `
+    },
+    {
+      id: 4,
+      image: "images/blog/blog-post-3.jpg",
+      date: "02 Nov 2023",
+      tag: "seo, otimização, sitemaps",
+      title: "Porque um sitemaps fará teu site vender mais e estar melhor rankeado?",
+      description: `<div>
+      <p>O sitemap do Next.js é uma funcionalidade que permite gerar um mapa do site (sitemap) de forma automatizada para otimização de mecanismos de busca (SEO). O pacote <strong>next-sitemap</strong> é uma extensão que facilita a criação de um sitemap para um aplicativo Next.js.</p>
+    
+      <p>No código que você forneceu, <strong>siteUrl</strong> é a URL base do seu site. Se a variável de ambiente <strong>SITE_URL</strong> estiver definida, o valor será obtido a partir dela. Caso contrário, será usado o valor padrão "https://example.com".</p>
+    
+      <p>A opção <strong>generateRobotsTxt</strong> indica se você deseja gerar um arquivo <strong>robots.txt</strong> automaticamente ou não. O <strong>robots.txt</strong> é um arquivo de texto que informa aos mecanismos de busca quais partes do seu site devem ser rastreadas ou não.</p>
+    
+      <p>Para utilizar o <strong>next-sitemap</strong>, você precisa configurar o arquivo <strong>next.config.js</strong> no diretório raiz do seu projeto Next.js. Após configurar o arquivo <strong>next.config.js</strong> com as opções apropriadas, você pode executar o comando de construção ou implantação padrão do Next.js, e o sitemap será gerado automaticamente de acordo com as configurações fornecidas. Isso ajuda os mecanismos de busca a entender melhor a estrutura do seu site e indexar suas páginas de forma mais eficiente.</p>
+    </div>
+    
+  `
+    }
   ];
   const { sectionToggle } = useContext(Context);
   const [blog, setBlog] = useState(null);

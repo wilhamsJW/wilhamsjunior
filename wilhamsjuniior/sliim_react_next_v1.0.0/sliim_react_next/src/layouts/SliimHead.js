@@ -24,7 +24,7 @@ const SliimHead = () => {
   return (
     <Fragment>
       <div>
-        <title>Sliim - React NextJS Personal Portfolio </title>
+        <title>Site Wilhams Júnior </title>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons" 
           rel="stylesheet"
